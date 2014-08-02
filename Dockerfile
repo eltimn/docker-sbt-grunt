@@ -17,7 +17,7 @@ RUN apt-get update && apt-get upgrade -y
 
 RUN apt-get install -y --no-install-recommends openjdk-7-jdk
 
-RUN apt-get -y install wget npm && apt-get clean
+RUN apt-get -y install wget npm git && apt-get clean
 
 RUN npm install -g grunt-cli
 RUN npm install -g less
